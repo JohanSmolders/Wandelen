@@ -117,14 +117,14 @@
   <div class="toast" id="toast" role="status"></div>
 
   <script>
-    // Laad walks.js en app.js altijd vers (geen oude versie uit de browsercache)
+    // Laad app.js altijd vers (geen oude versie uit de browsercache)
     (function load(files) {
       if (!files.length) return;
       var s = document.createElement("script");
       s.src = files[0] + "?v=" + Date.now();
       s.onload = s.onerror = function () { load(files.slice(1)); };
       document.body.appendChild(s);
-    })(["walks.js", "app.js"]);
+    })(["app.js"]);
   </script>
 </body>
 </html>

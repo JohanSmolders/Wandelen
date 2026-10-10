@@ -1,5 +1,4 @@
-// Lijst van wandelingen. Voeg nieuwe tochten toe aan deze lijst.
-window.WALKS = [
+[
   {
     "id": "coalminers-walk-winter-2026",
     "name": "Coalminers' Walk Winter",
@@ -9,7 +8,12 @@ window.WALKS = [
     "start": "Achter Thor Park, Genk (parking Thor Park)",
     "finish": "Achter Thor Park, Genk (parking Thor Park)",
     "type": "rond",
-    "distances": [28, 19, 13, 10],
+    "distances": [
+      28,
+      19,
+      13,
+      10
+    ],
     "elevation": null,
     "startTime": "Vrije start vanaf 08:00 · finish sluit 14:30",
     "price": "€ 17 (10 km) – € 29 (28 km)",
@@ -26,7 +30,14 @@ window.WALKS = [
     "start": "Voetbalveld FC Punt-Larum, Zwaarvoerdersspoor 3, Geel",
     "finish": "Voetbalveld FC Punt-Larum, Zwaarvoerdersspoor 3, Geel",
     "type": "rond",
-    "distances": [50, 25, 19, 13, 8, 5],
+    "distances": [
+      50,
+      25,
+      19,
+      13,
+      8,
+      5
+    ],
     "elevation": null,
     "startTime": "50 km: waves vanaf 06:00 en 06:40 · korte afstanden vanaf 08:00",
     "price": "Korte afstanden: € 2,50 (ter plaatse)",
@@ -43,7 +54,13 @@ window.WALKS = [
     "start": "House of Nature, Lommel",
     "finish": "House of Nature, Lommel",
     "type": "rond",
-    "distances": [25, 20, 16, 10, 6],
+    "distances": [
+      25,
+      20,
+      16,
+      10,
+      6
+    ],
     "elevation": null,
     "price": "€ 12 (6 km) – € 29 (25 km)",
     "organizer": "Go Dare Events",
@@ -59,7 +76,11 @@ window.WALKS = [
     "start": "Feestzaal Brugzavel, Brugzavel 25b, Kluisbergen",
     "finish": "Feestzaal Brugzavel, Brugzavel 25b, Kluisbergen",
     "type": "rond",
-    "distances": [50, 35, 25],
+    "distances": [
+      50,
+      35,
+      25
+    ],
     "elevation": null,
     "startTime": "50 km: 06:00 – 06:30 · 35 km: 07:00 – 09:00 · 25 km: 08:00 – 10:00 · finish uiterlijk 18:00",
     "price": "Leden: € 27 – € 40 · niet-leden: € 47 – € 60",
@@ -76,7 +97,12 @@ window.WALKS = [
     "start": "Jeugdcentrum Asteroïde, Ringlaan 400, Maasmechelen",
     "finish": "Jeugdcentrum Asteroïde, Ringlaan 400, Maasmechelen",
     "type": "rond",
-    "distances": [42.2, 21, 14, 7],
+    "distances": [
+      42.2,
+      21,
+      14,
+      7
+    ],
     "elevation": "42 km: 250–300 m · 21 km: 200–250 m · 14 km: 100–150 m · 7 km: 75–100 m",
     "startTime": "42,2 km: 07:00 – 08:00 · andere: 08:30 – 10:45",
     "organizer": "Golazo Sports",
@@ -92,7 +118,10 @@ window.WALKS = [
     "start": "Borussia-stadion, Hennes-Weisweiler-Allee 1, Mönchengladbach",
     "finish": "Borussia-stadion, Hennes-Weisweiler-Allee 1, Mönchengladbach",
     "type": "rond",
-    "distances": [50, 25],
+    "distances": [
+      50,
+      25
+    ],
     "elevation": "50 km: ca. 130 m · 25 km: nog niet bekend",
     "startTime": "50 km: vanaf 07:30 · 25 km: vanaf 11:00",
     "organizer": "Hundert24 GmbH",
@@ -108,7 +137,13 @@ window.WALKS = [
     "start": "Esplanade, De Panne (80 km) · Nieuwpoort (60) · Oostende (42) · De Haan (25) · Knokke-Heist (10)",
     "finish": "Evenementenstrand, Knokke-Heist",
     "type": "lijn",
-    "distances": [80, 60, 42, 25, 10],
+    "distances": [
+      80,
+      60,
+      42,
+      25,
+      10
+    ],
     "elevation": null,
     "startTime": "80 km: 04:00 – 05:00 (startwaves)",
     "organizer": "Golazo Sports & Wandelsport Vlaanderen",
@@ -124,7 +159,11 @@ window.WALKS = [
     "start": "ACEG Arena, Oostende (42 km) · De Haan (25) · Knokke-Heist (10)",
     "finish": "Evenementenstrand, Knokke-Heist",
     "type": "lijn",
-    "distances": [42, 25, 10],
+    "distances": [
+      42,
+      25,
+      10
+    ],
     "elevation": null,
     "startTime": "42 km: 07:00 – 09:30",
     "organizer": "Golazo Sports & Wandelsport Vlaanderen",
@@ -140,11 +179,16 @@ window.WALKS = [
     "start": "Skipiste Val de Wanne",
     "finish": "Skipiste Val de Wanne",
     "type": "rond",
-    "distances": [50, 36, 24, 10],
+    "distances": [
+      50,
+      36,
+      24,
+      10
+    ],
     "elevation": null,
     "price": "vanaf € 21",
     "organizer": "Passion For Sports",
     "url": "https://www.passionforsports.eu/nl-longestday",
     "notes": "Ten voordele van Pink Ribbon. Uitdaging: 50 km in minder dan 14 uur."
   }
-];
+]

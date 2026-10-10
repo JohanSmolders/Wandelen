@@ -236,14 +236,20 @@
   }
 
   /* ---------- Start ---------- */
-  if (Array.isArray(window.WALKS)) {
-    state.walks = window.WALKS.map((w) => ({ ...w, _date: parseDate(w.date) }));
-    readUrl();
-    fillYears();
-    syncControls();
-    render();
-    focusHash();
-  } else {
-    $("#list").innerHTML = `<div class="empty">${icon("i-empty")}<p><b>Kon de wandelingen niet laden.</b><br>Controleer <code>walks.js</code> op tikfouten (komma's, aanhalingstekens).</p></div>`;
-  }
+  fetch("walks.json", { cache: "no-store" })
+    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then((data) => {
+      state.walks = data.map((w) => ({ ...w, _date: parseDate(w.date) }));
+      readUrl();
+      fillYears();
+      syncControls();
+      render();
+      focusHash();
+    })
+    .catch(() => {
+      const local = location.protocol === "file:";
+      $("#list").innerHTML = `<div class="empty">${icon("i-empty")}<p><b>Kon de wandelingen niet laden.</b><br>${local
+        ? "Lokaal openen werkt niet rechtstreeks: start <code>python3 -m http.server</code> en open http://localhost:8000."
+        : "Controleer <code>walks.json</code> op tikfouten (komma's, aanhalingstekens)."}</p></div>`;
+    });
 })();
