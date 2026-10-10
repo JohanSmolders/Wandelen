@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wandelen</title>
+  <meta name="description" content="Wandelingen om samen te doen — een overzicht voor vrienden.">
+  <meta name="theme-color" content="#1f6f54">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- SVG icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-boot" viewBox="0 0 24 24"><path d="M5 3h5v6l3 1.5c2.5 1.2 6 2 7.5 3.5.6.6.5 1.5.5 2.5V18H3V5a2 2 0 0 1 2-2Z"/><path d="M3 18v2h18v-2"/><path d="M10 9h-2M10 6H8"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m10 8.5 5 3.5-5 3.5Z"/></symbol>
+    <symbol id="i-loop" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.4-5.7"/><path d="M20 4v4h-4"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="5" cy="18" r="2"/><circle cx="19" cy="6" r="2"/><path d="M7 18h8a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h8"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24"><path d="m3 20 6.5-11 4 6.5 2.5-4L21 20Z"/></symbol>
+    <symbol id="i-ruler" viewBox="0 0 24 24"><rect x="2" y="8" width="20" height="8" rx="1.5"/><path d="M6 8v3M10 8v4M14 8v3M18 8v4"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-calendar-plus" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+    <symbol id="i-euro" viewBox="0 0 24 24"><path d="M17 6.5A7 7 0 1 0 17 17.5"/><path d="M4 10h9M4 14h9"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.8 7.6-4.4M8.2 13.2l7.6 4.4"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v4h4"/></symbol>
+    <symbol id="i-empty" viewBox="0 0 24 24"><path d="M3 20h18"/><path d="m5 20 5-9 3 5 2-3 4 7"/><circle cx="17" cy="6" r="2"/></symbol>
+  </svg>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Wissel licht/donker thema">
+        <svg class="icon icon-sun"><use href="#i-sun"/></svg>
+        <svg class="icon icon-moon"><use href="#i-moon"/></svg>
+      </button>
+      <div class="brand">
+        <span class="brand-mark"><svg class="icon"><use href="#i-boot"/></svg></span>
+        <h1>Wandelen</h1>
+      </div>
+    </div>
+
+    <!-- Animated landscape -->
+    <svg class="landscape" viewBox="0 0 1440 260" preserveAspectRatio="none" aria-hidden="true">
+      <g class="cloud cloud-1"><ellipse cx="60" cy="40" rx="50" ry="14"/><ellipse cx="90" cy="30" rx="30" ry="16"/></g>
+      <g class="cloud cloud-2"><ellipse cx="60" cy="70" rx="40" ry="11"/><ellipse cx="80" cy="62" rx="24" ry="13"/></g>
+      <path class="hill hill-back" d="M0 170 L180 80 L300 150 L470 60 L640 160 L820 90 L980 150 L1150 70 L1300 140 L1440 100 V260 H0Z"/>
+      <path class="hill hill-mid" d="M0 200 C200 140 320 210 520 170 S860 120 1040 180 S1300 150 1440 170 V260 H0Z"/>
+      <path class="trail" d="M-20 245 C200 215 300 240 480 220 S800 190 980 215 S1260 230 1460 205"/>
+      <path class="hill hill-front" d="M0 230 C240 200 420 250 700 225 S1150 200 1440 230 V260 H0Z"/>
+    </svg>
+  </header>
+
+  <main>
+    <section class="filters" aria-label="Filters">
+      <div class="search">
+        <svg class="icon"><use href="#i-search"/></svg>
+        <input id="q" type="search" placeholder="Zoek op naam, plaats, organisator…" autocomplete="off">
+      </div>
+
+      <div class="filter-row">
+        <div class="chip-group" role="group" aria-label="Periode">
+          <button class="chip is-active" data-filter="when" data-value="upcoming" type="button">Komend</button>
+          <button class="chip" data-filter="when" data-value="past" type="button">Voorbij</button>
+          <button class="chip" data-filter="when" data-value="all" type="button">Alles</button>
+        </div>
+
+        <div class="chip-group" role="group" aria-label="Type">
+          <button class="chip is-active" data-filter="type" data-value="all" type="button">Alle types</button>
+          <button class="chip" data-filter="type" data-value="rond" type="button"><svg class="icon"><use href="#i-loop"/></svg>Rondwandeling</button>
+          <button class="chip" data-filter="type" data-value="lijn" type="button"><svg class="icon"><use href="#i-route"/></svg>Punt naar punt</button>
+        </div>
+      </div>
+
+      <div class="filter-row">
+        <label class="field">
+          <span>Afstand</span>
+          <select id="dist">
+            <option value="all">Alle afstanden</option>
+            <option value="0-15">tot 15 km</option>
+            <option value="15-30">15 – 30 km</option>
+            <option value="30-45">30 – 45 km</option>
+            <option value="45-999">45 km en meer</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Jaar</span>
+          <select id="year"><option value="all">Alle jaren</option></select>
+        </label>
+        <label class="field">
+          <span>Sorteer</span>
+          <select id="sort">
+            <option value="asc">Eerstvolgende eerst</option>
+            <option value="desc">Laatste eerst</option>
+          </select>
+        </label>
+        <button class="btn-ghost" id="reset" type="button"><svg class="icon"><use href="#i-reset"/></svg>Wis filters</button>
+      </div>
+    </section>
+
+    <section id="list" class="timeline" aria-live="polite"></section>
+  </main>
+
+  <footer class="footer">
+    <p>Gemaakt om samen te wandelen <span class="heart">♥</span> · Info zonder garantie, check altijd de site van de organisator.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="walks.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
