@@ -1,6 +1,39 @@
 // Lijst van wandelingen. Voeg nieuwe tochten toe aan deze lijst.
 window.WALKS = [
   {
+    "id": "coalminers-walk-winter-2026",
+    "name": "Coalminers' Walk Winter",
+    "date": "2026-01-17",
+    "location": "Genk",
+    "region": "Limburg, België",
+    "start": "Achter Thor Park, Genk (parking Thor Park)",
+    "finish": "Achter Thor Park, Genk (parking Thor Park)",
+    "type": "rond",
+    "distances": [28, 19, 13, 10],
+    "elevation": null,
+    "startTime": "Vrije start vanaf 08:00 · finish sluit 14:30",
+    "price": "€ 17 (10 km) – € 29 (28 km)",
+    "organizer": "Go Dare Events",
+    "url": "https://vandersanden-limburgruns.be/coalminers-walk-winter-2026/",
+    "notes": "Over en rond de mijnterrils van Genk, in het Nationaal Park Hoge Kempen. Max. 1000 deelnemers. Honden aan de leiband toegelaten."
+  },
+  {
+    "id": "midzomer-sahara-walk-2026",
+    "name": "Midzomer Sahara Trail & Walk",
+    "date": "2026-06-20",
+    "location": "Lommel",
+    "region": "Limburg, België",
+    "start": "House of Nature, Lommel",
+    "finish": "House of Nature, Lommel",
+    "type": "rond",
+    "distances": [25, 20, 16, 10, 6],
+    "elevation": null,
+    "price": "€ 12 (6 km) – € 29 (25 km)",
+    "organizer": "Go Dare Events",
+    "url": "https://vandersanden-limburgruns.be/midzomersahararun/",
+    "notes": "Eerste editie. Door de Lommelse Sahara, langs uitkijktoren De Reus van Bosland en De Vossemeren (Nationaal Park Bosland). Honden aan de leiband toegelaten."
+  },
+  {
     "id": "nationaal-park-marathon-2027",
     "name": "Nationaal Park Marathon – Walk",
     "date": "2027-02-20",
