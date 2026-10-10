@@ -2,7 +2,7 @@
   "use strict";
 
   const $ = (sel) => document.querySelector(sel);
-  const state = { walks: [], q: "", when: "upcoming", type: "all", dist: "all", year: "all", sort: "asc" };
+  const state = { walks: [], q: "", when: "all", type: "all", dist: "all", year: "all", sort: "asc" };
 
   const TYPE_LABEL = { rond: "Rondwandeling", lijn: "Punt naar punt" };
   const TYPE_ICON = { rond: "i-loop", lijn: "i-route" };
@@ -193,7 +193,7 @@
   function writeUrl() {
     const p = new URLSearchParams();
     if (state.q) p.set("q", state.q);
-    if (state.when !== "upcoming") p.set("when", state.when);
+    if (state.when !== "all") p.set("when", state.when);
     if (state.type !== "all") p.set("type", state.type);
     if (state.dist !== "all") p.set("dist", state.dist);
     if (state.year !== "all") p.set("year", state.year);
@@ -221,7 +221,7 @@
   $("#year").addEventListener("change", (e) => { state.year = e.target.value; update(); });
   $("#sort").addEventListener("change", (e) => { state.sort = e.target.value; update(); });
   $("#reset").addEventListener("click", () => {
-    Object.assign(state, { q: "", when: "upcoming", type: "all", dist: "all", year: "all", sort: "asc" });
+    Object.assign(state, { q: "", when: "all", type: "all", dist: "all", year: "all", sort: "asc" });
     update();
   });
 
