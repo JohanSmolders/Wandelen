@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <meta http-equiv="Cache-Control" content="no-cache">
 </head>
 <body>
   <!-- SVG icon sprite -->
@@ -115,7 +116,15 @@
 
   <div class="toast" id="toast" role="status"></div>
 
-  <script src="walks.js"></script>
-  <script src="app.js"></script>
+  <script>
+    // Laad walks.js en app.js altijd vers (geen oude versie uit de browsercache)
+    (function load(files) {
+      if (!files.length) return;
+      var s = document.createElement("script");
+      s.src = files[0] + "?v=" + Date.now();
+      s.onload = s.onerror = function () { load(files.slice(1)); };
+      document.body.appendChild(s);
+    })(["walks.js", "app.js"]);
+  </script>
 </body>
 </html>

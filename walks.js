@@ -18,6 +18,23 @@ window.WALKS = [
     "notes": "Over en rond de mijnterrils van Genk, in het Nationaal Park Hoge Kempen. Max. 1000 deelnemers. Honden aan de leiband toegelaten."
   },
   {
+    "id": "zotte-50-geel-2026",
+    "name": "De Zotte 50 van Geel",
+    "date": "2026-05-30",
+    "location": "Geel (Larum)",
+    "region": "Antwerpen, België",
+    "start": "Voetbalveld FC Punt-Larum, Zwaarvoerdersspoor 3, Geel",
+    "finish": "Voetbalveld FC Punt-Larum, Zwaarvoerdersspoor 3, Geel",
+    "type": "rond",
+    "distances": [50, 25, 19, 13, 8, 5],
+    "elevation": null,
+    "startTime": "50 km: waves vanaf 06:00 en 06:40 · korte afstanden vanaf 08:00",
+    "price": "Korte afstanden: € 2,50 (ter plaatse)",
+    "organizer": "Raak Larum",
+    "url": "https://www.dezotte50vangheel.be/",
+    "notes": "15de editie. Langs de windmolen van Larum, Neerhelst, Mosselgoren en het Kempens Kanaal. 50 km was volgeboekt (vooraf inschrijven); korte afstanden enkel ter plaatse."
+  },
+  {
     "id": "midzomer-sahara-walk-2026",
     "name": "Midzomer Sahara Trail & Walk",
     "date": "2026-06-20",
@@ -32,6 +49,23 @@ window.WALKS = [
     "organizer": "Go Dare Events",
     "url": "https://vandersanden-limburgruns.be/midzomersahararun/",
     "notes": "Eerste editie. Door de Lommelse Sahara, langs uitkijktoren De Reus van Bosland en De Vossemeren (Nationaal Park Bosland). Honden aan de leiband toegelaten."
+  },
+  {
+    "id": "seven-summits-2026",
+    "name": "Seven Summits",
+    "date": "2026-10-24",
+    "location": "Kluisbergen",
+    "region": "Oost-Vlaanderen, België",
+    "start": "Feestzaal Brugzavel, Brugzavel 25b, Kluisbergen",
+    "finish": "Feestzaal Brugzavel, Brugzavel 25b, Kluisbergen",
+    "type": "rond",
+    "distances": [50, 35, 25],
+    "elevation": null,
+    "startTime": "50 km: 06:00 – 06:30 · 35 km: 07:00 – 09:00 · 25 km: 08:00 – 10:00 · finish uiterlijk 18:00",
+    "price": "Leden: € 27 – € 40 · niet-leden: € 47 – € 60",
+    "organizer": "Flanders Trails",
+    "url": "https://www.sevensummits.be/",
+    "notes": "Door de Vlaamse Ardennen. De 50 km beklimt zeven 'summits': Tiegemberg, Kwaremont, Hotond, Pensemont, Kluisberg, Paterberg en Kortenberg. Editie 2026 is uitverkocht."
   },
   {
     "id": "nationaal-park-marathon-2027",
